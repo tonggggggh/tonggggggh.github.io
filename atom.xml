@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://tonggggggh.github.io/</id>
+    <title>TONG&apos;s WEB</title>
+    <updated>2023-04-21T02:47:27.236Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://tonggggggh.github.io/"/>
+    <link rel="self" href="https://tonggggggh.github.io/atom.xml"/>
+    <subtitle>一些些感想和知识</subtitle>
+    <logo>https://tonggggggh.github.io/images/avatar.png</logo>
+    <icon>https://tonggggggh.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2023, TONG&apos;s WEB</rights>
+    <entry>
+        <title type="html"><![CDATA[inner emptiness]]></title>
+        <id>https://tonggggggh.github.io/post/inner-emptiness/</id>
+        <link href="https://tonggggggh.github.io/post/inner-emptiness/">
+        </link>
+        <updated>2023-04-19T05:43:45.000Z</updated>
+        <content type="html"><![CDATA[<p><em>The void within, aching to be filled,</em></p>
+<p><em>Seeking outward for what can’t be found.</em></p>
+<p><em>The restless search, the grasping hands,</em></p>
+<p><em>All to soothe a solitude profound.</em></p>
+<p><u>claude</u></p>
+<hr>
+<p><em>The void within, aching to be filled,</em></p>
+<p><em>Seeking outward for what can’t be found.</em></p>
+<p><em>The restless search, the grasping hands,</em></p>
+<p><em>All to soothe a solitude profound.</em></p>
+<p><u>New Bing</u></p>
+<hr>
+<p><em>Within me lies a void so deep,</em></p>
+<p><em>A chasm where my soul should sleep,</em></p>
+<p><em>An emptiness that echoes loud,</em></p>
+<p><em>A weight that drags me to the ground,</em></p>
+<p><em>And yet I search, but never found.</em></p>
+<p><u>GPT-3.5</u></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第一天]]></title>
+        <id>https://tonggggggh.github.io/post/di-yi-tian/</id>
+        <link href="https://tonggggggh.github.io/post/di-yi-tian/">
+        </link>
+        <updated>2023-04-16T04:24:35.000Z</updated>
+        <content type="html"><![CDATA[<p>还不错，网页加载有问题</p>
+]]></content>
+    </entry>
+</feed>
