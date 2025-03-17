@@ -1,0 +1,1547 @@
+<?xml version="1.0" encoding="utf-8"?>
+<feed xmlns="http://www.w3.org/2005/Atom">
+    <id>https://tonggggggh.github.io</id>
+    <title>TONG&apos;s blog</title>
+    <updated>2025-03-17T02:56:03.248Z</updated>
+    <generator>https://github.com/jpmonette/feed</generator>
+    <link rel="alternate" href="https://tonggggggh.github.io"/>
+    <link rel="self" href="https://tonggggggh.github.io/atom.xml"/>
+    <subtitle>learning……</subtitle>
+    <logo>https://tonggggggh.github.io/images/avatar.png</logo>
+    <icon>https://tonggggggh.github.io/favicon.ico</icon>
+    <rights>All rights reserved 2025, TONG&apos;s blog</rights>
+    <entry>
+        <title type="html"><![CDATA[海洋遥感基础知识点总结]]></title>
+        <id>https://tonggggggh.github.io/post/hai-yang-yao-gan-ji-chu-zhi-shi-dian-zong-jie/</id>
+        <link href="https://tonggggggh.github.io/post/hai-yang-yao-gan-ji-chu-zhi-shi-dian-zong-jie/">
+        </link>
+        <updated>2025-03-14T12:30:15.000Z</updated>
+        <content type="html"><![CDATA[<hr>
+<p>title: 海洋遥感基础知识点总结<br>
+date: 2025/03/16 15:48<br>
+progress: 进行中<br>
+简介: 本文章内容基于书籍海洋遥感基础及应用<br>
+联系: tonghuu04@gmail.com</p>
+<hr>
+<!-- 禁用右键菜单和文本选择 -->
+<body oncontextmenu="return false" ondragstart="return false" onselectstart="return false">
+  <!-- 添加CSS防止复制 -->
+  <style>
+    body {
+      user-select: none;
+      -webkit-user-select: none;
+      -moz-user-select: none;
+      -ms-user-select: none;
+    }
+  </style>
+</body>
+<h1 id="一-绪论">一、绪论</h1>
+<h2 id="11-海洋遥感定义">1.1 海洋遥感定义</h2>
+<p><strong>定义</strong>：不与探测目标接触，利用传感器为工具，记录远处目标的电磁波特性，通过一系列科学分析手段，揭示物体的物理特征及其变化的综合性探测技术</p>
+<p>遥感系统组成：收集、探测、信号转换和记录系统</p>
+<table>
+<thead>
+<tr>
+<th style="text-align:left">传感器种类</th>
+<th>应用</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td style="text-align:left">水色传感器</td>
+<td>海洋表层叶绿素浓度、悬浮物浓度、黄色物质、漫射衰减系数等海洋参数</td>
+</tr>
+<tr>
+<td style="text-align:left">红外传感器</td>
+<td>反演海表面温度SST</td>
+</tr>
+<tr>
+<td style="text-align:left">微波高度计</td>
+<td>反演平均海面高度、大地水准面、有效波高、海面风速、表层流等</td>
+</tr>
+<tr>
+<td style="text-align:left">微波散射计</td>
+<td>反演海面上方10m风场</td>
+</tr>
+<tr>
+<td style="text-align:left">合成孔径雷达</td>
+<td>反演波浪方向谱、中尺度漩涡、海洋内波、浅海地形、海洋锋面、海上目标（船舶尾迹监测）以及海表特征信息等</td>
+</tr>
+<tr>
+<td style="text-align:left">微波辐射计</td>
+<td>反演海表面温度、海面风速、海冰、水汽含量、降雨、CO<sub>2</sub>海-气交换等</td>
+</tr>
+</tbody>
+</table>
+<h2 id="12-海洋遥感体系">1.2 海洋遥感体系</h2>
+<p>无重点内容，了解内容即可</p>
+<h2 id="13-海洋遥感分类">1.3 海洋遥感分类</h2>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th>分类方式</th>
+<th></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>按波段</td>
+<td>紫外遥感、可见光遥感、红外遥感、微波遥感</td>
+</tr>
+<tr>
+<td>按平台</td>
+<td>地面遥感(低于5km)、航空遥感 (低于20km)、航天遥感</td>
+</tr>
+<tr>
+<td>按应用</td>
+<td>陆地遥感、海洋遥感、气象遥感</td>
+</tr>
+<tr>
+<td>按<strong>应用</strong>（海洋遥感）</td>
+<td>海洋水色遥感、海洋动力环境遥感、海洋监视监测</td>
+</tr>
+<tr>
+<td>工作方式</td>
+<td>主动遥感、被动遥感</td>
+</tr>
+<tr>
+<td>按光谱数量</td>
+<td>全色、多光谱、高光谱、超光谱</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!CAUTION]</p>
+<p>按平台分类不同地方分类标准不同</p>
+<p>还可按照<strong>应用领域</strong>细分，如林业遥感、大气遥感、海洋遥感、农业遥感、地质遥感等</p>
+</blockquote>
+<p>1.4 海洋遥感发展</p>
+<p>此节在第四章中详述相关内容</p>
+<hr>
+<h1 id="二-海洋遥感基础">二、海洋遥感基础</h1>
+<h2 id="21-电磁波辐射基础">2.1 电磁波辐射基础</h2>
+<ol>
+<li><strong>麦克斯韦方程组：</strong></li>
+</ol>
+<p>​	高斯定律（电场） ： <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">E</mi><mo>=</mo><mfrac><mi>ρ</mi><msub><mi>ε</mi><mn>0</mn></msub></mfrac></mrow><annotation encoding="application/x-tex">\nabla \cdot \mathbf{E} = \frac{\rho}{\varepsilon_0}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">E</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.1926em;vertical-align:-0.44509999999999994em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7475em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight">ε</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31731428571428577em;"><span style="top:-2.357em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.446108em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">ρ</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.44509999999999994em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>​	高斯定律（磁场）  ：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∇</mi><mo>⋅</mo><mi mathvariant="bold">B</mi><mo>=</mo><mn>0</mn></mrow><annotation encoding="application/x-tex">\nabla \cdot \mathbf{B} = 0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">B</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.64444em;vertical-align:0em;"></span><span class="mord">0</span></span></span></span></p>
+<p>​	法拉第电磁感应定律  ：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∇</mi><mo>×</mo><mi mathvariant="bold">E</mi><mo>=</mo><mo>−</mo><mfrac><mrow><mi mathvariant="normal">∂</mi><mi mathvariant="bold">B</mi></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\nabla \times \mathbf{E} = -\frac{\partial \mathbf{B}}{\partial t}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">E</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.2251079999999999em;vertical-align:-0.345em;"></span><span class="mord">−</span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801079999999999em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord mathdefault mtight">t</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord mtight"><span class="mord mathbf mtight">B</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>​	麦克斯韦-安培定律  ：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">∇</mi><mo>×</mo><mi mathvariant="bold">B</mi><mo>=</mo><msub><mi>μ</mi><mn>0</mn></msub><mi mathvariant="bold">J</mi><mo>+</mo><msub><mi>μ</mi><mn>0</mn></msub><msub><mi>ε</mi><mn>0</mn></msub><mfrac><mrow><mi mathvariant="normal">∂</mi><mi mathvariant="bold">E</mi></mrow><mrow><mi mathvariant="normal">∂</mi><mi>t</mi></mrow></mfrac></mrow><annotation encoding="application/x-tex">\nabla \times \mathbf{B} = \mu_0 \mathbf{J} + \mu_0 \varepsilon_0 \frac{\partial \mathbf{E}}{\partial t}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.76666em;vertical-align:-0.08333em;"></span><span class="mord">∇</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.68611em;vertical-align:0em;"></span><span class="mord"><span class="mord mathbf">B</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8805499999999999em;vertical-align:-0.19444em;"></span><span class="mord"><span class="mord mathdefault">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathbf">J</span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1.2251079999999999em;vertical-align:-0.345em;"></span><span class="mord"><span class="mord mathdefault">μ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">ε</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8801079999999999em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord mathdefault mtight">t</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight" style="margin-right:0.05556em;">∂</span><span class="mord mtight"><span class="mord mathbf mtight">E</span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>其中：<strong>E</strong> 是电场强度，<strong>B</strong> 是磁感应强度，<strong>ρ</strong> 是电荷密度，<strong>J</strong> 是电流密度，<strong>ε₀</strong> 是真空介电常数，<strong>μ₀</strong> 是真空磁导率。</p>
+<ol start="2">
+<li>
+<p><strong>光电效应</strong>：光电效应指的是当光照射到金属表面时，金属会发射出电子的现象</p>
+</li>
+<li>
+<p><strong>干涉</strong>：两列或两列以上频率、振动方向、相位相同或恒定的电磁波在空间中叠加，引起震动强度重新分布，即某些地方振动加强，某些地方振动减弱或完全抵消的现象</p>
+</li>
+<li>
+<p><strong>偏振</strong>：电磁波的振动方向具有一定的规律性。普通的光波是<strong>横波</strong>，其电场振动方向可以在传播方向的垂直平面内朝任何方向振动，而偏振光的电场振动方向受到限制。（微波遥感中称为“<strong>极化</strong>”）可分为线偏振光、圆偏振光和椭圆偏振光</p>
+<p>垂直极化——电场强度方向垂直于地面；水平极化——电场强度平行垂直于地面</p>
+</li>
+<li>
+<p><strong>衍射</strong>：衍射是指当波（如光波、声波或水波）遇到障碍物或通过狭缝时，偏离直线传播并进入几何阴影区域的现象。</p>
+</li>
+<li>
+<p>电磁波谱：电磁波按波长的长短一次排列形成的图表。下图为可见光和微波波段划分</p>
+<img src="https://raw.githubusercontent.com/tonggggggh/cloudimg/main/image/%E7%94%B5%E7%A3%81%E6%B3%A2%E8%B0%B1.jpg" alt="电磁波谱" style="zoom: 33%;" />
+<p><img src="https://raw.githubusercontent.com/tonggggggh/cloudimg/main/image/band.png" alt="band" style="zoom:50%;" /><img src="https://raw.githubusercontent.com/tonggggggh/cloudimg/main/image/MBXY-CR-03e9f753fab1f26638277c63a63f8874.png" alt="一文看懂电磁波的波段命名-电子工程专辑" style="zoom: 50%;" /></p>
+</li>
+<li>
+<p>卫星天顶角：卫星所在方向与地面法线之间的夹角</p>
+</li>
+<li>
+<p>卫星观测角 ：传感器视线与地面法线之间的夹角</p>
+</li>
+<li>
+<p><strong>黑体</strong>：是一个理想化的物体，它能完全吸收所有入射的电磁辐射（不反射、不透射），同时，它也是最理想的辐射体，在任何温度下，它都以最大效率发射电磁波</p>
+</li>
+<li>
+<p><strong>灰体</strong>：是指在特定波长范围内具有恒定吸收率的物体。与黑体不同，灰体的吸收率 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>α</mi></mrow><annotation encoding="application/x-tex">\alpha</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.0037em;">α</span></span></span></span> 不等于1，但在所有波长上是常数，且通常小于1。通常可把海洋看作灰体</p>
+</li>
+<li>
+<p>黑体辐射：是指黑体在不同温度下发出的电磁波，其特性仅由温度 T 决定，而与材质无关。黑体辐射的研究是量子物理学的基础之一</p>
+</li>
+<li>
+<p><strong>普朗克黑体辐射定律</strong>：黑体在某一温度下，每个波长的辐射强度：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi><mo>(</mo><mi>λ</mi><mo separator="true">,</mo><mi>T</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>h</mi><msup><mi>c</mi><mn>2</mn></msup></mrow><msup><mi>λ</mi><mn>5</mn></msup></mfrac><mfrac><mn>1</mn><mrow><msup><mi>e</mi><mfrac><mrow><mi>h</mi><mi>c</mi></mrow><mrow><mi>λ</mi><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow></mfrac></msup><mo>−</mo><mn>1</mn></mrow></mfrac></mrow><annotation encoding="application/x-tex">B(\lambda, T) = \frac{2hc^2}{\lambda^5} \frac{1}{e^{\frac{hc}{\lambda k_B T}} - 1}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.598273em;vertical-align:-1.107165em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.491108em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">λ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">5</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathdefault">h</span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.32144em;"><span style="top:-2.1100000000000003em;"><span class="pstrut" style="height:3.133835em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">e</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:1.133835em;"><span style="top:-3.5178149999999997em;margin-right:0.05em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mopen nulldelimiter sizing reset-size3 size6"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8800285714285714em;"><span style="top:-2.6559999999999997em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">λ</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3448em;"><span style="top:-2.3447999999999998em;margin-left:-0.03148em;margin-right:0.1em;"><span class="pstrut" style="height:2.6833299999999998em;"></span><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.33853em;"><span></span></span></span></span></span></span><span class="mord mathdefault mtight" style="margin-right:0.13889em;">T</span></span></span></span><span style="top:-3.2255000000000003em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line mtight" style="border-bottom-width:0.049em;"></span></span><span style="top:-3.384em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">h</span><span class="mord mathdefault mtight">c</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5858071428571429em;"><span></span></span></span></span></span><span class="mclose nulldelimiter sizing reset-size3 size6"></span></span></span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord">1</span></span></span><span style="top:-3.363835em;"><span class="pstrut" style="height:3.133835em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.810835em;"><span class="pstrut" style="height:3.133835em;"></span><span class="mord"><span class="mord">1</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:1.107165em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>斯特藩-玻尔兹曼定律</strong>：描述黑体总辐射功率 ( M ) 与温度的关系：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>M</mi><mo>=</mo><mi>σ</mi><msup><mi>T</mi><mn>4</mn></msup></mrow><annotation encoding="application/x-tex">M = \sigma T^4</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.10903em;">M</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>维恩位移定律</strong>：描述黑体辐射的<strong>峰值波长</strong>与温度的关系：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>λ</mi><mi>max</mi><mo>⁡</mo></msub><mo>=</mo><mfrac><mi>b</mi><mi>T</mi></mfrac></mrow><annotation encoding="application/x-tex">\lambda_{\max} = \frac{b}{T}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.84444em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault">λ</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.151392em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.301392em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight">max</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">b</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>基尔霍夫定律</strong>：基尔霍夫定律描述了物体的吸收能力（吸收率）和发射能力（辐射率）之间的关系，对于任意物体，辐射率等于吸收率</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mfrac><mrow><mi>E</mi><mo>(</mo><mi>T</mi><mo separator="true">,</mo><mi>λ</mi><mo>)</mo></mrow><mrow><mi>A</mi><mo>(</mo><mi>T</mi><mo separator="true">,</mo><mi>λ</mi><mo>)</mo></mrow></mfrac><mo>=</mo><mi>B</mi><mo>(</mo><mi>T</mi><mo separator="true">,</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\frac{E(T, \lambda)}{A(T, \lambda)} = B(T, \lambda)
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:2.363em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault">A</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>瑞利-金斯定律</strong>：在微波波段此公式具有适用性，亮度温度于温度呈正比；在短波区，瑞利-金斯定律预测的能量趋于无穷大，与实验不符</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>B</mi><mo>(</mo><mi>λ</mi><mo separator="true">,</mo><mi>T</mi><mo>)</mo><mo>=</mo><mfrac><mrow><mn>2</mn><mi>c</mi><msub><mi>k</mi><mi>B</mi></msub><mi>T</mi></mrow><msup><mi>λ</mi><mn>4</mn></msup></mfrac></mrow><annotation encoding="application/x-tex">B(\lambda, T) = \frac{2 c k_B T}{\lambda^4}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.05744em;vertical-align:-0.686em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.37144em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">λ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord">2</span><span class="mord mathdefault">c</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03148em;">k</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.03148em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.686em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>辐射能、辐射通量、辐照度、出射度、辐射强度、辐亮度</strong></p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th>物理量</th>
+<th>符号</th>
+<th>定义</th>
+<th>单位</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>辐射能</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>Q</mi></mrow><annotation encoding="application/x-tex">Q</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8777699999999999em;vertical-align:-0.19444em;"></span><span class="mord mathdefault">Q</span></span></span></span></td>
+<td>电磁辐射携带的总能量</td>
+<td>J（焦耳）</td>
+</tr>
+<tr>
+<td>辐射通量</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi mathvariant="normal">Φ</mi></mrow><annotation encoding="application/x-tex">\Phi</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord">Φ</span></span></span></span></td>
+<td>单位时间的辐射能量</td>
+<td>W（瓦特 = J/s）</td>
+</tr>
+<tr>
+<td>辐照度</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>E</mi></mrow><annotation encoding="application/x-tex">E</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.05764em;">E</span></span></span></span></td>
+<td>单位面积上接收到的辐射通量</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi mathvariant="normal">/</mi><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">W/m^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord">/</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></td>
+</tr>
+<tr>
+<td>出射度</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>J</mi></mrow><annotation encoding="application/x-tex">J</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.09618em;">J</span></span></span></span></td>
+<td>单位面积上向外辐射的通量</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi mathvariant="normal">/</mi><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">W/m^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord">/</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></td>
+</tr>
+<tr>
+<td>辐射强度</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>I</mi></mrow><annotation encoding="application/x-tex">I</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.07847em;">I</span></span></span></span></td>
+<td>单位立体角内的辐射通量</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi mathvariant="normal">/</mi><mi>s</mi><mi>r</mi></mrow><annotation encoding="application/x-tex">W/sr</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord">/</span><span class="mord mathdefault">s</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span></span></span></span></td>
+</tr>
+<tr>
+<td>辐亮度<br />（遥感观测）</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi></mrow><annotation encoding="application/x-tex">L</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">L</span></span></span></span></td>
+<td>单位面积单位立体角内的辐射通量</td>
+<td><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi mathvariant="normal">/</mi><mo>(</mo><msup><mi>m</mi><mn>2</mn></msup><mo>⋅</mo><mi>s</mi><mi>r</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">W/(m^2 \cdot sr)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord">/</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">⋅</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">s</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mclose">)</span></span></span></span></td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="22-可见光遥感基础">2.2 可见光遥感基础</h2>
+<ol>
+<li>
+<p>大气分层：对流层、平流层、中间层、热层</p>
+</li>
+<li>
+<p><strong>大气窗口</strong>：指在地球大气层中，一些波长范围内的电磁辐射能够较为自由地穿透大气，到达地面或太空的区域。</p>
+</li>
+</ol>
+<p><strong>可见光窗口</strong>（0.4 - 0.7 μm）；<strong>红外窗口</strong>（8 - 14 μm）；<strong>微波窗口</strong>（1 - 100 cm）</p>
+<ol start="3">
+<li>
+<p>太阳常数E<sub>0</sub>：日-地平均距离出，单位时间内在垂直于太阳光线的单位面积上接受到的全部太阳辐射能，其值为<strong>1360</strong><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>W</mi><mi mathvariant="normal">/</mi><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">W/m^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.064108em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">W</span><span class="mord">/</span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>瑞利散射</strong>：大气微粒直径远小于入射辐射波长</p>
+</li>
+<li>
+<p><strong>米氏散射</strong>：大气微粒直径接近或稍大于入射辐射波长</p>
+</li>
+<li>
+<p><strong>无选择性散射</strong>：大气微粒直径远大于入射辐射波长</p>
+</li>
+<li>
+<p>反射：电磁波与地表物质反射形式有镜面反射、漫反射（郎伯反射）和方向性反射</p>
+</li>
+<li>
+<p>离水辐射：是指从水体表面向上传播并最终进入大气的辐射。它是水体光学遥感中的关键变量</p>
+</li>
+<li>
+<p><strong>离水辐射率</strong>：描述光波入射到水面、经过散射和反射后的辐射特性的物理量。它是水体反射入射的辐射能量的组成部分，以从水面出射的辐射能量来表示</p>
+</li>
+<li>
+<p><strong>考虑水体光学特性的辐射传输方程</strong>：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>t</mi><mo>(</mo><mi>λ</mi><mo>)</mo><mo>=</mo><mi>L</mi><mi>a</mi><mo>(</mo><mi>λ</mi><mo>)</mo><mo>+</mo><mi>L</mi><mi>r</mi><mo>(</mo><mi>λ</mi><mo>)</mo><mo>+</mo><mi>L</mi><mi>a</mi><mi>r</mi><mo>(</mo><mi>λ</mi><mo>)</mo><mo>+</mo><mi>T</mi><mo>[</mo><mi>L</mi><mi>g</mi><mo>(</mo><mi>λ</mi><mo>)</mo><mo>+</mo><mi>L</mi><mi>f</mi><mo>(</mo><mi>λ</mi><mo>)</mo><mo>]</mo><mo>+</mo><mi>t</mi><mi>L</mi><mi>w</mi><mo>(</mo><mi>λ</mi><mo>)</mo><mspace width="1em"/></mrow><annotation encoding="application/x-tex">Lt(λ) = La(λ) + Lr(λ) + Lar(λ) + T[Lg(λ) + Lf(λ)] + tLw(λ) \quad
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">a</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="mopen">[</span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span><span class="mclose">]</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">+</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">t</span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span><span class="mspace" style="margin-right:1em;"></span></span></span></span></span></p>
+<p>式中，</p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>t</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Lt(λ)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">t</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 为传感器接收到的总辐射；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>a</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">La(λ)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">a</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 为气溶胶散射的贡献；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>r</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Lr(λ)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 为瑞利散射的贡献；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>a</mi><mi>r</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Lar(λ)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault">a</span><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 为瑞利散射和气溶胶散射相互作用的贡献；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>g</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Lg(λ)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.03588em;">g</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 为海面耀光；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>f</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Lf(λ)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.10764em;">f</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 为海面泡沫反射的贡献；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>L</mi><mi>w</mi><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">Lw(λ)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord mathdefault">L</span><span class="mord mathdefault" style="margin-right:0.02691em;">w</span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 为离水辐射率；</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span> 为大气漫射透过率。</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>t</mi></mrow><annotation encoding="application/x-tex">t</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.61508em;vertical-align:0em;"></span><span class="mord mathdefault">t</span></span></span></span>为大气漫射透射率</li>
+</ul>
+</li>
+</ol>
+<img src="https://raw.githubusercontent.com/tonggggggh/cloudimg/main/image/img_1.png" style="zoom:50%;" />
+<ol start="11">
+<li>遥感中使用辐射传输方程解算离水辐射率，主要方法有逐次散射法、离散坐标法以及矩阵算子法等</li>
+</ol>
+<h2 id="23-红外遥感基础">2.3 红外遥感基础</h2>
+<ol>
+<li>
+<p>皮层深度：电场强度衰减为初始值的1/e（微波在海水中的衰减）</p>
+</li>
+<li>
+<p>穿透深度：辐照度衰减为初始值的1/e（可见光在海水中的衰减）</p>
+</li>
+<li>
+<p>光学厚度：辐射强度衰减为初始值的1/e（大气和海洋大衰减）</p>
+</li>
+<li>
+<p>海温的红外反演对白天获取的数据要去掉3.7μm附近的中红外波段数据</p>
+<p><strong>短波红外（SWIR, 1.4 - 3 μm）</strong>：用于火灾监测、植被水分含量反演。</p>
+<p><strong>中波红外（MWIR, 3 - 5 μm）</strong>：适用于高温目标（如火山、燃烧区域）。</p>
+<p><strong>长波红外（LWIR, 8 - 14 μm）</strong>：主要用于地表温度、大气温度反演（如 MODIS、Landsat TIRS、Sentinel-3 SLSTR 传感器）</p>
+</li>
+</ol>
+<h2 id="24-微波遥感基础">2.4 微波遥感基础</h2>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th><strong>优势</strong></th>
+<th><strong>说明</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>全天候</td>
+<td>不受云、雾、降水影响，可持续获取数据</td>
+</tr>
+<tr>
+<td>全天时</td>
+<td>可在夜间成像，不依赖太阳光</td>
+</tr>
+<tr>
+<td>穿透能力</td>
+<td>可穿透云层、雨滴，部分波段可穿透植被、土壤</td>
+</tr>
+<tr>
+<td>物理信息</td>
+<td>可测亮温、土壤湿度、海冰厚度等物理量</td>
+</tr>
+<tr>
+<td>高分辨率</td>
+<td>SAR 可达米级甚至亚米级分辨率</td>
+</tr>
+<tr>
+<td>监测动态变化</td>
+<td>适用于风速、地表形变、冰川运动等长期监测</td>
+</tr>
+<tr>
+<td>适应极端环境</td>
+<td>适用于沙漠、极地、海洋等环境</td>
+</tr>
+</tbody>
+</table>
+<ol>
+<li>
+<p><strong>亮度温度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>T</mi><mi>B</mi></msub></mrow><annotation encoding="application/x-tex">T_B</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span></strong>：是遥感中用于描述物体辐射特性的重要物理量，表示物体在特定波长或频率下辐射出的能量相当于黑体在该温度下的辐射量。它通过辐射测量估算物体的温度，但不同于实际物理温度（热力学温度 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>T</mi></mrow><annotation encoding="application/x-tex">T</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span>），因为它受物体的发射率影响。</p>
+<p>对于 <strong>微波遥感</strong>（长波段，瑞利-金斯近似适用）：</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>T</mi><mi>B</mi></msub><mo>=</mo><mi>ϵ</mi><mi>T</mi></mrow><annotation encoding="application/x-tex">T_B=ϵT
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">T</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.05017em;">B</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault">ϵ</span><span class="mord mathdefault" style="margin-right:0.13889em;">T</span></span></span></span></span></p>
+<p>其中：</p>
+<ul>
+<li>$\epsilon $ 是 <strong>目标物的发射率</strong>，</li>
+<li>$T $ 是目标物的物理温度（K）。</li>
+</ul>
+</li>
+<li>
+<p><strong>后向散射截面</strong>：经后向散射返回传感器功率与入射功率密度之比，用有效散射面积表示，符号为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>σ</mi></mrow><annotation encoding="application/x-tex">\sigma</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span></span></span></span>，单位为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">m^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span></p>
+</li>
+<li>
+<p><strong>雷达后向散射系数</strong>：入射方向目标单位截面积的雷达反射率，也称为归一化雷达散射截面，表示单位面积的平均雷达散射截面，用 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>σ</mi><mn>0</mn></msup></mrow><annotation encoding="application/x-tex">\sigma^0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span></span></span></span>表示，单位为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>d</mi><mi>B</mi></mrow><annotation encoding="application/x-tex">dB</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">d</span><span class="mord mathdefault" style="margin-right:0.05017em;">B</span></span></span></span>（分贝）。<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>σ</mi><mn>0</mn></msup><mo>=</mo><mover accent="true"><mi>σ</mi><mo>ˉ</mo></mover><mi mathvariant="normal">/</mi><msub><mi>A</mi><mn>0</mn></msub></mrow><annotation encoding="application/x-tex">\sigma^0=\bar{\sigma}/A_0</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.56778em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span></span></span><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.25em;">ˉ</span></span></span></span></span></span><span class="mord">/</span><span class="mord"><span class="mord mathdefault">A</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>，为无量纲的量</p>
+</li>
+<li>
+<p>雷达方程：雷达方程用于描述雷达发射信号、目标反射回波和接收功率之间的关系，广泛应用于雷达遥感、目标探测和测距。</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>P</mi><mi>r</mi></msub><mo>=</mo><mfrac><mrow><msub><mi>P</mi><mi>t</mi></msub><msub><mi>G</mi><mi>t</mi></msub><msup><mi>λ</mi><mn>2</mn></msup><mi>σ</mi></mrow><mrow><mo>(</mo><mn>4</mn><mi>π</mi><msup><mo>)</mo><mn>3</mn></msup><msup><mi>R</mi><mn>4</mn></msup></mrow></mfrac></mrow><annotation encoding="application/x-tex">P_r = \frac{P_t G_t \lambda^2 \sigma}{(4\pi)^3 R^4}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.427108em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.491108em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mopen">(</span><span class="mord">4</span><span class="mord mathdefault" style="margin-right:0.03588em;">π</span><span class="mclose"><span class="mclose">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">3</span></span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.740108em;"><span style="top:-2.9890000000000003em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">4</span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.13889em;">P</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">G</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.2805559999999999em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">t</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord"><span class="mord mathdefault">λ</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mord mathdefault" style="margin-right:0.03588em;">σ</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<p>其中：</p>
+<ul>
+<li>$ P_r $ ：雷达接收到的回波功率（W）</li>
+<li>$P_t $ ：雷达发射功率（W）</li>
+<li>$G_t $：天线增益（无量纲）</li>
+<li>$\sigma  $：雷达散射截面（RCS, <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msup><mi>m</mi><mn>2</mn></msup></mrow><annotation encoding="application/x-tex">m^2</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord"><span class="mord mathdefault">m</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span></span>）</li>
+<li>$R $ ：目标与雷达之间的距离（m）</li>
+<li>$ \lambda $ ：天线发射电磁波波长</li>
+</ul>
+</li>
+<li>
+<p><strong>影响雷达回波的因素总结表</strong></p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th><strong>因素类别</strong></th>
+<th><strong>具体因素</strong></th>
+<th><strong>描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>目标特性</strong></td>
+<td>雷达散射截面</td>
+<td>目标对雷达波的反射能力，越大则回波信号越强。</td>
+</tr>
+<tr>
+<td></td>
+<td>目标运动</td>
+<td>影响多普勒频移和回波信号质量。</td>
+</tr>
+<tr>
+<td><strong>雷达系统参数</strong></td>
+<td>发射功率</td>
+<td>发射功率越大，回波信号越强。</td>
+</tr>
+<tr>
+<td></td>
+<td>天线增益</td>
+<td>增益越大，雷达波在目标方向的集中程度越高。</td>
+</tr>
+<tr>
+<td></td>
+<td>雷达波长</td>
+<td>影响穿透能力和散射特性，长波穿透性强，短波分辨率高。</td>
+</tr>
+<tr>
+<td></td>
+<td>雷达频率</td>
+<td>高频对天气影响大，低频适合穿透。</td>
+</tr>
+<tr>
+<td></td>
+<td>天线方向性与视角</td>
+<td>影响波束传播范围与回波强度。</td>
+</tr>
+<tr>
+<td><strong>环境与传播条件</strong></td>
+<td>大气条件</td>
+<td>雨、雪、云、雾等天气影响信号传播，导致衰减。</td>
+</tr>
+<tr>
+<td></td>
+<td>地形和地表</td>
+<td>地形障碍物和地面反射特性影响回波强度。</td>
+</tr>
+<tr>
+<td></td>
+<td>传播损耗</td>
+<td>自由空间传播损耗，散射与吸收。</td>
+</tr>
+<tr>
+<td><strong>电磁波传播效应</strong></td>
+<td>多路径效应</td>
+<td>信号通过多个路径到达接收器，可能导致干扰和偏移。</td>
+</tr>
+<tr>
+<td></td>
+<td>折射效应</td>
+<td>信号传播时折射，导致回波强度和方向变化。</td>
+</tr>
+<tr>
+<td><strong>其他因素</strong></td>
+<td>雷达信号的噪声</td>
+<td>来自设备、环境等的噪声会干扰有效信号。</td>
+</tr>
+<tr>
+<td></td>
+<td>时间窗口与测量方法</td>
+<td>影响信号的精确度和分辨率。</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>SAR 工作原理和应用</strong></p>
+<p>SAR 利用卫星平台沿着飞行轨迹运动，在运动过程中连续发射并接收雷达信号。通过相位差和目标的回波信息，SAR 能够合成一个虚拟的大孔径，从而实现比平台实际天线尺寸更高的分辨率。</p>
+<img src="https://raw.githubusercontent.com/tonggggggh/cloudimg/main/image/202306271419000438086.png" alt="SAR原理及影像介绍" style="zoom: 50%;" />
+</li>
+<li>
+<p><strong>海面布拉格共振散射（Bragg Resonance Scattering ）</strong>：是指雷达波在海面反射时与海面波动的周期性特征产生共振现象。该现象在海面波的周期与雷达波的波长相匹配时出现，导致雷达回波的增强。</p>
+<hr>
+</li>
+</ol>
+<h1 id="三-海洋遥感平台和遥感器">三、海洋遥感平台和遥感器</h1>
+<h2 id="31-海洋遥感平台">3.1 海洋遥感平台</h2>
+<ol>
+<li>
+<p><strong>地球观测轨道类型表格</strong></p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th><strong>轨道类型</strong></th>
+<th><strong>定义</strong></th>
+<th><strong>轨道高度</strong></th>
+<th><strong>特点</strong></th>
+<th><strong>应用</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>极地轨道 (Polar Orbit)</strong></td>
+<td>卫星沿极地轨道运行，穿越地球的南北极。</td>
+<td>约160km至2,000km</td>
+<td>覆盖全球，轨道周期为90到100分钟。</td>
+<td>高分辨率遥感、气象监测、环境保护等</td>
+</tr>
+<tr>
+<td><strong>同步轨道 (Geostationary Orbit, GEO)</strong></td>
+<td>卫星绕地球赤道上空运行，轨道周期与地球自转周期相同。</td>
+<td>约35,786km</td>
+<td>卫星保持与地球表面同一位置，适用于气象和通信。</td>
+<td>气象卫星、通信卫星、广播卫星等</td>
+</tr>
+<tr>
+<td><strong>日地同步轨道 (Sun-Synchronous Orbit)</strong></td>
+<td>卫星与太阳的相对位置保持一致，每次经过地球时，处于相同的太阳角度。</td>
+<td>约600km至800km</td>
+<td>轨道倾斜角度固定，适合持续观测。</td>
+<td>气象、环境监测、资源勘探等遥感卫星</td>
+</tr>
+<tr>
+<td><strong>近地轨道 (Low Earth Orbit, LEO)</strong></td>
+<td>卫星在距地表160km至2,000km的轨道范围内绕地球运行。</td>
+<td>约160km至2,000km</td>
+<td>卫星轨道周期为90到120分钟，适合高分辨率观测。</td>
+<td>地球观测、环境监测、通信等</td>
+</tr>
+<tr>
+<td><strong>椭圆轨道 (Elliptical Orbit)</strong></td>
+<td>卫星轨道呈椭圆形，包含近地点和远地点。</td>
+<td>高度变化较大</td>
+<td>卫星在近地点速度较快，远地点速度较慢。</td>
+<td>通信卫星、科学探索、军事侦察等任务</td>
+</tr>
+<tr>
+<td><strong>高中轨道 (Medium Earth Orbit, MEO)</strong></td>
+<td>卫星运行在距地表2,000km至35,786km的轨道范围内。</td>
+<td>约2,000km至35,786km</td>
+<td>轨道周期通常为2到12小时，提供广泛区域覆盖。</td>
+<td>导航卫星系统（如GPS、北斗、GLONASS）等</td>
+</tr>
+</tbody>
+</table>
+<ol start="2">
+<li><strong>精确循环轨道</strong>：卫星环绕地球多圈后能够恰好回到原来位置</li>
+<li><strong>循环周期</strong>：卫星从出发到近似回归到原来轨道位置对应的时间区间</li>
+<li><strong>卫星重复周期</strong>：卫星从某地上空开始运行，经过若干时间的运行后回到原地上空所需时间</li>
+<li><strong>传感器重复周期</strong>：卫星装载的传感器对目标完成一次全部或全球覆盖的时间周期</li>
+<li><strong>传感器的再访问时间</strong>：地球某一地点被传感器先后两次观测的时间区间</li>
+</ol>
+<h2 id="32-典型海洋遥感器">3.2 典型海洋遥感器</h2>
+<ol>
+<li>
+<p>主要遥感器：</p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>传感器类型</th>
+<th>传感器名称</th>
+<th>主要海洋应用</th>
+<th>搭载卫星</th>
+<th>国家/地区</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>可见光</strong></td>
+<td>MODIS</td>
+<td>叶绿素浓度、悬浮物、海洋水色</td>
+<td>Aqua/Terra (NASA)</td>
+<td>美国</td>
+<td>中国风云卫星搭载类似传感器</td>
+</tr>
+<tr>
+<td></td>
+<td>OLCI</td>
+<td>水色、浮游植物监测</td>
+<td>Sentinel-3A/3B (ESA)</td>
+<td>欧盟</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>HY-1C/D COCTS</td>
+<td>海洋水色、海岸带监测</td>
+<td>HY-1C/D</td>
+<td>中国</td>
+<td>中国自主海洋水色卫星</td>
+</tr>
+<tr>
+<td></td>
+<td>GF-1/6 多光谱相机</td>
+<td>近海环境监测、赤潮识别</td>
+<td>高分一号/六号</td>
+<td>中国</td>
+<td>高分辨率可见光遥感</td>
+</tr>
+<tr>
+<td><strong>红外</strong></td>
+<td>VIIRS</td>
+<td>海表温度（SST）、热污染监测</td>
+<td>Suomi NPP/NOAA-20 (NOAA)</td>
+<td>美国</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>AVHRR</td>
+<td>海表温度、热辐射监测</td>
+<td>NOAA系列卫星</td>
+<td>美国</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>FY-3D/VIRR</td>
+<td>海表温度、海洋热通量</td>
+<td>FY-3D</td>
+<td>中国</td>
+<td>中国气象卫星红外遥感</td>
+</tr>
+<tr>
+<td><strong>微波（主动）</strong></td>
+<td>SAR</td>
+<td>海浪、海面风场、溢油监测</td>
+<td>Sentinel-1A/1B (ESA)</td>
+<td>欧盟</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>CFOSAT SCAT</td>
+<td>海面风场观测</td>
+<td>中法海洋卫星（CFOSAT）</td>
+<td>中法合作</td>
+<td>全球风场与海浪谱同步观测</td>
+</tr>
+<tr>
+<td></td>
+<td>GF-3 SAR</td>
+<td>高分辨率海浪、船舶监测</td>
+<td>GF-3</td>
+<td>中国</td>
+<td>中国首颗C波段SAR，分辨率1米</td>
+</tr>
+<tr>
+<td></td>
+<td>HISEA-1 SAR</td>
+<td>近海高分辨率成像</td>
+<td>海丝一号（HISEA-1）</td>
+<td>中国</td>
+<td>商业SAR卫星</td>
+</tr>
+<tr>
+<td><strong>微波（被动）</strong></td>
+<td>SMAP辐射计</td>
+<td>海面盐度、土壤湿度</td>
+<td>SMAP (NASA)</td>
+<td>美国</td>
+<td></td>
+</tr>
+<tr>
+<td></td>
+<td>HY-2B/C/D 微波辐射计</td>
+<td>海面温度、盐度、风速</td>
+<td>HY-2B/C/D</td>
+<td>中国</td>
+<td>中国自主海洋动力环境卫星</td>
+</tr>
+<tr>
+<td></td>
+<td>HY-2 散射计</td>
+<td>海面风场、风速</td>
+<td>HY-2系列</td>
+<td>中国</td>
+<td>微波散射计，精度达2 m/s</td>
+</tr>
+</tbody>
+</table>
+<p><strong>高分系列</strong>：</p>
+<ul>
+<li><strong>GF-3</strong>：C 波段 SAR，支持全天候海洋监测（1米分辨率）。</li>
+<li><strong>GF-1/6</strong>：可见光多光谱相机，用于近海污染监测。</li>
+</ul>
+<p><strong>海洋系列</strong>：</p>
+<ul>
+<li><strong>HY-1C/D</strong>：水色水温扫描仪（COCTS），专攻海洋生态监测。</li>
+<li><strong>HY-2B/C/D</strong>：微波辐射计+散射计，监测海面动力参数（温度、风场、盐度）。</li>
+</ul>
+<ol start="2">
+<li>
+<p>激光遥感器：</p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+</li>
+</ol>
+<table>
+<thead>
+<tr>
+<th>传感器类型</th>
+<th>传感器名称</th>
+<th>主要海洋应用</th>
+<th>搭载卫星</th>
+<th>国家/地区</th>
+<th>备注</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>激光</strong></td>
+<td>CALIOP</td>
+<td>气溶胶监测、浅海地形、叶绿素荧光</td>
+<td>CALIPSO (NASA/CNES)</td>
+<td>美法合作</td>
+<td>主要用于大气，可间接支持海洋生物监测</td>
+</tr>
+<tr>
+<td></td>
+<td>ATLAS</td>
+<td>海冰厚度、海面高度测量</td>
+<td>ICESat-2 (NASA)</td>
+<td>美国</td>
+<td>光子计数激光雷达，精度达厘米级</td>
+</tr>
+<tr>
+<td></td>
+<td>GF-7 激光测高仪</td>
+<td>浅海地形测绘、海岸带高程测量</td>
+<td>GF-7</td>
+<td>中国</td>
+<td>中国首颗亚米级立体测绘卫星</td>
+</tr>
+<tr>
+<td></td>
+<td>ZY3-02 激光测高仪</td>
+<td>海陆高程测量、浅海测深（&lt;50米）</td>
+<td>资源三号02星（ZY3-02）</td>
+<td>中国</td>
+<td>辅助海洋地形与海岸带监测</td>
+</tr>
+</tbody>
+</table>
+<hr>
+<h1 id="四-海洋遥感资料处理和卫星遥感产品">四、海洋遥感资料处理和卫星遥感产品</h1>
+<h2 id="41-海洋遥感资料预处理">4.1 海洋遥感资料预处理</h2>
+<ol>
+<li>海洋遥感资料预处理：是指从 L0 级经过数据解包、几何定位和辐射定标的过程，也叫 L1 级处理过程。</li>
+<li>L1A 级处理：数据解包以及验证所处理的 L0 级数据，将这些数据组织呈扫描位置一样的数据产品，生成地球定位数据，添加相关辅助信息</li>
+<li>L1B 级处理：对 L1A 级数据进行辐射定标，用于后续数据处理</li>
+<li><strong>辐射定标</strong>：将原始数据 DN 值转化为辐射率或者辐亮度值</li>
+</ol>
+<h2 id="42-可见光遥感资料处理">4.2 可见光遥感资料处理</h2>
+<ol>
+<li>
+<p>水色遥感过程：通过大气校正得到离水辐射，再根据各成分浓度与离水辐射之间的相关关系，反演得到各水色要素浓度</p>
+</li>
+<li>
+<p>大气校正：旨在消除大气（气溶胶、水蒸气、瑞利散射等）和太阳天顶角对传感器接收信号的干扰，获取精确的海面归一化离水辐亮度或者归一化离水辐射率。是海洋水色遥感算法的基础</p>
+</li>
+<li>
+<p>遥感反射率：是描述水体表面向上辐射能量与入射太阳辐照度比值的物理量，单位为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><msup><mi>r</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">sr^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span>。</p>
+<p class='katex-block'><span class="katex-display"><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>R</mi><mrow><mi>r</mi><mi>s</mi></mrow></msub><mo>(</mo><mi>λ</mi><mo>)</mo><mo>=</mo><mfrac><mrow><msub><mi>L</mi><mi>u</mi></msub><mo>(</mo><mi>λ</mi><mo separator="true">,</mo><msup><mn>0</mn><mo>+</mo></msup><mo>)</mo></mrow><mrow><msub><mi>E</mi><mi>d</mi></msub><mo>(</mo><mi>λ</mi><mo separator="true">,</mo><msup><mn>0</mn><mo>+</mo></msup><mo>)</mo></mrow></mfrac><mo>=</mo><mfrac><mrow><msub><mi>L</mi><mrow><mi>w</mi><mi>n</mi></mrow></msub><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mn>0</mn></msub><mo>(</mo><mi>λ</mi><mo>)</mo></mrow></mfrac></mrow><annotation encoding="application/x-tex">R_{rs} (\lambda) = \frac{L_u (\lambda, 0^+)}{E_d (\lambda, 0^+)}=\frac{L_{wn}(\lambda)}{\bar F_0(\lambda)}
+</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mord mathdefault mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.384331em;vertical-align:-0.936em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.448331em;"><span style="top:-2.314em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.697331em;"><span style="top:-2.989em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.771331em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.936em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:2.38711em;vertical-align:-0.9601099999999999em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.427em;"><span style="top:-2.28989em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;">ˉ</span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.677em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02691em;">w</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.9601099999999999em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></span></p>
+<ul>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>R</mi><mrow><mi>r</mi><mi>s</mi></mrow></msub><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">R_{rs} (\lambda)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:-0.00773em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02778em;">r</span><span class="mord mathdefault mtight">s</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 是波长 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>λ</mi></mrow><annotation encoding="application/x-tex">\lambda</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.69444em;vertical-align:0em;"></span><span class="mord mathdefault">λ</span></span></span></span>  处的遥感反射率 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>s</mi><msup><mi>r</mi><mrow><mo>−</mo><mn>1</mn></mrow></msup></mrow><annotation encoding="application/x-tex">sr^{-1}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8141079999999999em;vertical-align:0em;"></span><span class="mord mathdefault">s</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.02778em;">r</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8141079999999999em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">−</span><span class="mord mtight">1</span></span></span></span></span></span></span></span></span></span></span></span></li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mi>u</mi></msub><mo>(</mo><mi>λ</mi><mo separator="true">,</mo><msup><mn>0</mn><mo>+</mo></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">L_u (\lambda, 0^+)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.021331em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">u</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.771331em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 是水面以上的上行辐射亮度</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>E</mi><mi>d</mi></msub><mo>(</mo><mi>λ</mi><mo separator="true">,</mo><msup><mn>0</mn><mo>+</mo></msup><mo>)</mo></mrow><annotation encoding="application/x-tex">E_d (\lambda, 0^+)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.021331em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.05764em;">E</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.33610799999999996em;"><span style="top:-2.5500000000000003em;margin-left:-0.05764em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">d</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mpunct">,</span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord"><span class="mord">0</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.771331em;"><span style="top:-3.063em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mbin mtight">+</span></span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span> 是水面以上的向下平行辐照度</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>L</mi><mrow><mi>w</mi><mi>n</mi></mrow></msub><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">L_{wn}(\lambda)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">L</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.151392em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.02691em;">w</span><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 是归一化离水辐亮度</li>
+<li><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mover accent="true"><mi>F</mi><mo>ˉ</mo></mover><mn>0</mn></msub><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">\bar F_0(\lambda)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1.07011em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord mathdefault" style="margin-right:0.13889em;">F</span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;">ˉ</span></span></span></span></span></span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.30110799999999993em;"><span style="top:-2.5500000000000003em;margin-left:-0.13889em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">0</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span> 是平均日地距离处大气层外垂直入射的太阳辐照度</li>
+</ul>
+</li>
+<li>
+<p>一类水体：主要由浮游植物（及其伴生的溶解有机物和碎屑）决定其光学特性的水体</p>
+</li>
+<li>
+<p>二类水体：光学特性由多种因素决定，不仅仅是叶绿素，还包括悬浮颗粒物和溶解有机物</p>
+</li>
+<li>
+<p>表观光学量：由光场和水中成分而定，包括向下辐照度、离水辐亮度、遥感反射率等，以及这些量的衰减系数</p>
+</li>
+<li>
+<p>固有光学量：与光场无关，只与水中的成分分布及其光学特性有关，直接反映媒介的散射和吸收特征，如吸收系数、散射系数、体散射函数等</p>
+</li>
+<li>
+<p>一类水体大气校正方法：对于一类水体，近红外波段的离水辐射率可忽略不计，可认为传感器在近红外波段收到的大气层顶反射率都来自大气程辐射。在一致气溶胶类型的情况下，根据近红外波段估算出气溶胶光学厚度，从而计算出其他波段的大气漫散射透过率，在此基础上即可计算出海面离水辐射率。误差在 5% 内（此方法为<strong>暗像元法</strong>） 下列表格列举<strong>其他</strong>方法：</p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th>方法名称</th>
+<th>原理</th>
+<th>适用传感器</th>
+<th>优点</th>
+<th>缺点</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>暗像元法</strong></td>
+<td>假设近红外/短波红外波段离水反射率为0，反演气溶胶光学厚度（AOD）</td>
+<td>MODIS, VIIRS, HY-1C/D</td>
+<td>计算<strong>效率高</strong>，适合业务化处理</td>
+<td>对二类水体无效，依赖气溶胶模型假设</td>
+</tr>
+<tr>
+<td><strong>辐射传输模型法</strong></td>
+<td>基于物理模型（如6S）模拟大气路径辐射，逐像元反演离水信号</td>
+<td>多源光学卫星</td>
+<td>精度高，适应复杂观测几何</td>
+<td>计算复杂，需输入大气参数</td>
+</tr>
+<tr>
+<td><strong>NIR-SWIR联合反演法</strong></td>
+<td>利用近红外与短波红外波段对气溶胶敏感性差异，优化校正精度</td>
+<td>MODIS, VIIRS, Sentinel-3</td>
+<td>降低气溶胶类型误差</td>
+<td>依赖波段设置，不适用无SWIR的传感器</td>
+</tr>
+<tr>
+<td><strong>LUT匹配法</strong></td>
+<td>预生成气溶胶模型与几何条件下的辐射传输结果，匹配实测数据反演最佳参数</td>
+<td>HY-1C/D, GF-5</td>
+<td>区域化优化（如中国近海）</td>
+<td>需大量预计算和实测数据支持</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>二类水体大气校正方法：在近红外甚至短波红外波段仍有较高的反射率，传统的暗像元法并不适用</p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th>方法名称</th>
+<th>原理</th>
+<th>适用传感器</th>
+<th>优点</th>
+<th>缺点</th>
+<th>典型应用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>迭代校正法</strong></td>
+<td>通过多波段数据迭代优化气溶胶参数与水体光学参数（如后向散射系数）</td>
+<td>Sentinel-3, HY-1C/D</td>
+<td>适应复杂气溶胶-水体耦合效应</td>
+<td>计算耗时，依赖初始值设定</td>
+<td>河口、近岸浑浊水体</td>
+</tr>
+<tr>
+<td><strong>光谱匹配校正法</strong></td>
+<td>匹配实测或模拟光谱库，优化气溶胶模型与离水反射率</td>
+<td>GF-5 AHSI, MODIS</td>
+<td>高光谱分辨率下精度高</td>
+<td>依赖光谱库完备性</td>
+<td>湖泊、封闭海域</td>
+</tr>
+<tr>
+<td><strong>短波红外（SWIR）校正法</strong></td>
+<td>利用短波红外波段（1240 nm, 1640 nm, 2130 nm）估算大气路径辐射，并外推到可见光波段进行校正</td>
+<td>MODIS, VIIRS, Sentinel-2</td>
+<td>解决近红外波段失效问题</td>
+<td>仅限搭载SWIR波段的传感器</td>
+<td>高悬浮物河口</td>
+</tr>
+<tr>
+<td><strong>基于紫外波段的高浑浊校正法</strong></td>
+<td>利用紫外波段（350-400 nm）对CDOM的高敏感性，分离气溶胶与CDOM吸收</td>
+<td>GF-5 AHSI, PACE</td>
+<td>有效抑制CDOM干扰</td>
+<td>紫外波段易受大气散射影响，需高信噪比传感器</td>
+<td>富CDOM的河口与湖泊</td>
+</tr>
+<tr>
+<td><strong>基于实测光谱的大气校正法</strong></td>
+<td>结合现场实测光谱数据，动态优化大气校正参数</td>
+<td>多源卫星（需同步实测）</td>
+<td>精度最高（误差&lt;10%）</td>
+<td>依赖密集实测，成本高</td>
+<td>重点监测区域（如长江口）</td>
+</tr>
+<tr>
+<td><strong>CNN（卷积神经网络）校正法</strong></td>
+<td>训练深度学习模型，直接从TOA辐射值预测离水反射率</td>
+<td>多源数据（需标注数据集）</td>
+<td>自适应复杂非线性关系，无需物理模型</td>
+<td>需大量标注数据，泛化能力受限</td>
+<td>近岸、赤潮区域</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>水色参数反演算法</strong>：</p>
+</li>
+</ol>
+   <style>
+     table {
+       font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+     }
+   </style>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>主要原理</strong></th>
+<th><strong>适用水体</strong></th>
+<th><strong>适用遥感器</strong></th>
+<th><strong>优点</strong></th>
+<th><strong>局限性</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>经验统计模型</strong></td>
+<td>通过波段比值与水质参数的经验关系进行拟合</td>
+<td>一类水体</td>
+<td>MODIS, VIIRS, Sentinel-3</td>
+<td>计算简单，全球适用</td>
+<td>适应性差，不能用于 Case 2 水体</td>
+</tr>
+<tr>
+<td><strong>半分析模型</strong></td>
+<td>结合辐射传输模型，估算光学参数</td>
+<td>一类 &amp; 二类水体</td>
+<td>MODIS, Sentinel-3, Landsat 8</td>
+<td>物理基础强，适用于不同水体</td>
+<td>计算复杂，需要参数校准</td>
+</tr>
+<tr>
+<td><strong>机器学习方法</strong></td>
+<td>通过 AI 训练数据学习水质参数特征</td>
+<td>复杂水体</td>
+<td>Sentinel-2, Landsat 8, PRISMA</td>
+<td>自动化程度高，适应性强</td>
+<td>依赖训练数据，泛化能力有限</td>
+</tr>
+<tr>
+<td><strong>优化方法</strong></td>
+<td>采用最小二乘法、遗传算法优化反演</td>
+<td>适用于各种水体</td>
+<td>MODIS, PRISMA, GF-5</td>
+<td>适用于全球水色遥感</td>
+<td>计算量大</td>
+</tr>
+<tr>
+<td><strong>高光谱反演</strong></td>
+<td>结合高光谱数据和光谱解混技术</td>
+<td>二类复杂水体</td>
+<td>PRISMA, EnMAP, GF-5</td>
+<td>适用于复杂水体，信息丰富</td>
+<td>计算复杂，数据量大</td>
+</tr>
+</tbody>
+</table>
+<ol start="11">
+<li>
+<p><strong>主要海洋水色参数及反演方法</strong></p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th><strong>参数</strong></th>
+<th><strong>定义与意义</strong></th>
+<th><strong>常用算法</strong></th>
+<th><strong>适用传感器</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>叶绿素a（Chl-a）</strong></td>
+<td>浮游植物浓度，反映海洋初级生产力</td>
+<td>- 波段比值法（OCx算法，如OC3/OC4）<br/>- 荧光基线法（利用荧光峰）<br/>- 机器学习法（如随机森林、CNN）</td>
+<td>MODIS, VIIRS, HY-1C/D</td>
+</tr>
+<tr>
+<td><strong>悬浮物浓度（TSM）</strong></td>
+<td>水体中无机/有机颗粒物含量，指示水体浑浊度</td>
+<td>- 单波段经验模型（如红光波段回归）<br/>- 多波段组合模型<br/>- 半分析模型（QAA算法）</td>
+<td>Sentinel-2, GF-1/6</td>
+</tr>
+<tr>
+<td><strong>CDOM吸收系数</strong></td>
+<td>有色可溶性有机物（腐殖酸等）对光的吸收能力</td>
+<td>- 紫外-蓝光波段比值法<br/>- 主成分分析（PCA）<br/>- 高光谱分解法</td>
+<td>GF-5 AHSI, PACE</td>
+</tr>
+<tr>
+<td><strong>透明度（SDD）</strong></td>
+<td>水体清澈程度，与悬浮物和浮游植物相关</td>
+<td>- 经验回归模型（基于Chl-a或TSM）<br/>- 半分析模型（基于漫衰减系数K_d）</td>
+<td>Landsat, Sentinel-3</td>
+</tr>
+</tbody>
+</table>
+</li>
+</ol>
+<h2 id="43-红外遥感资料处理">4.3 红外遥感资料处理</h2>
+<p>海洋红外遥感主要用于**海洋表面温度（SST）**反演</p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th><strong>方法</strong></th>
+<th><strong>主要原理</strong></th>
+<th><strong>适用遥感器</strong></th>
+<th><strong>优点</strong></th>
+<th><strong>局限性</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>物理模型法</strong></td>
+<td>基于辐射传输方程（如MODTRAN）模拟大气路径辐射，反演SST</td>
+<td>大多数</td>
+<td>物理基础强，适应多种大气条件</td>
+<td>计算耗时，需输入大气参数</td>
+</tr>
+<tr>
+<td><strong>单通道法</strong></td>
+<td>采用单个红外通道亮温计算 SST</td>
+<td>AVHRR, MODIS, VIIRS</td>
+<td>计算简单</td>
+<td>受大气影响大，精度较低</td>
+</tr>
+<tr>
+<td><strong>分裂窗口法</strong></td>
+<td>利用 11 μm 和 12 μm 波段消除大气影响</td>
+<td>MODIS, Sentinel-3, AVHRR</td>
+<td>精度高，适用于全球海洋</td>
+<td>需大气廓线数据校正</td>
+</tr>
+<tr>
+<td><strong>三通道法</strong></td>
+<td>增加 3.7 μm 通道，减少大气影响</td>
+<td>MODIS, VIIRS</td>
+<td>适用于夜间 SST 反演</td>
+<td>受云层影响大</td>
+</tr>
+<tr>
+<td><strong>多通道校正法</strong></td>
+<td>采用多个红外波段综合校正大气影响</td>
+<td>MODIS, Sentinel-3, VIIRS</td>
+<td>适用于复杂天气条件</td>
+<td>计算复杂，依赖大气模式</td>
+</tr>
+<tr>
+<td><strong>机器学习方法</strong></td>
+<td>通过 AI 训练数据进行 SST 反演</td>
+<td>MODIS, Sentinel-3, GOES-16</td>
+<td>高精度，适应性强</td>
+<td>需大量训练数据</td>
+</tr>
+</tbody>
+</table>
+<!----><u>补充</u>
+<p>云检测方法</p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th>算法名称</th>
+<th>原理</th>
+<th>适用波段（μm）</th>
+<th>优点</th>
+<th>缺点</th>
+<th>典型应用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>阈值法</strong></td>
+<td>基于可见光与热红外波段的反射率/亮度温度阈值判断云像元</td>
+<td>0.6, 11, 12</td>
+<td>计算简单，适合业务化处理</td>
+<td>对薄云、卷云检测效果差</td>
+<td>MODIS, FY-3D</td>
+</tr>
+<tr>
+<td><strong>光谱特征法</strong></td>
+<td>利用云与海洋在特定波段（如1.38 μm）的光谱差异检测云</td>
+<td>1.38, 1.6, 2.2</td>
+<td>对薄云、卷云检测效果好</td>
+<td>依赖高光谱数据，计算复杂</td>
+<td>VIIRS, Sentinel-3</td>
+</tr>
+<tr>
+<td><strong>纹理分析法</strong></td>
+<td>分析影像局部纹理特征（如方差、熵）区分云与海洋</td>
+<td>全波段</td>
+<td>适应复杂云型（如积云、层云）</td>
+<td>计算量大，对噪声敏感</td>
+<td>高分辨率影像（GF-1/6）</td>
+</tr>
+<tr>
+<td><strong>机器学习法</strong></td>
+<td>训练分类模型（如随机森林、CNN）从多波段数据中识别云</td>
+<td>多波段</td>
+<td>自适应复杂云型与背景</td>
+<td>需大量标注数据，泛化能力受限</td>
+<td>多源数据融合</td>
+</tr>
+</tbody>
+</table>
+<p>云去除方法</p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th>方法名称</th>
+<th>原理</th>
+<th>适用场景</th>
+<th>优点</th>
+<th>缺点</th>
+<th>典型应用场景</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>插值法</strong></td>
+<td>基于时间或空间插值填补云覆盖区域</td>
+<td>稀疏云覆盖</td>
+<td>计算简单，适合小范围云去除</td>
+<td>对大面积云覆盖效果差</td>
+<td>MODIS, HY-1D</td>
+</tr>
+<tr>
+<td><strong>多时相融合法</strong></td>
+<td>融合多时相影像，选择无云像元替换云覆盖区域</td>
+<td>周期性观测区域</td>
+<td>保留真实地表信息</td>
+<td>依赖高质量无云影像</td>
+<td>Sentinel-2, GF-1/6</td>
+</tr>
+<tr>
+<td><strong>光谱重建法</strong></td>
+<td>利用云周围像元光谱信息重建云覆盖区域</td>
+<td>薄云或云边缘区域</td>
+<td>适应复杂光谱特征</td>
+<td>对厚云效果差</td>
+<td>VIIRS, GF-5 AHSI</td>
+</tr>
+<tr>
+<td><strong>机器学习法</strong></td>
+<td>训练模型（如GAN、CNN）从多波段数据中预测云下地表信息</td>
+<td>复杂云覆盖区域</td>
+<td>自适应多种云型与背景</td>
+<td>需大量标注数据，计算复杂</td>
+<td>多源数据融合</td>
+</tr>
+<tr>
+<td><strong>物理模型法</strong></td>
+<td>基于辐射传输模型模拟云与地表辐射特性，反演云下信息</td>
+<td>高精度科研需求</td>
+<td>物理基础强，适应多种大气条件</td>
+<td>计算耗时，需输入大气参数</td>
+<td>MODIS, FY-3D</td>
+</tr>
+</tbody>
+</table>
+<h2 id="44-微波遥感资料处理">4.4 微波遥感资料处理</h2>
+<ol>
+<li>
+<p><strong>高度计误差源</strong>：高度计噪声、大气误差、海况偏差、轨道误差、环境误差源、潮汐、大气逆压</p>
+</li>
+<li>
+<p>波形重跟踪（Retracking）：是对雷达高度计波形的后处理过程，其目的是从原始的返回波形中提取准确的海面高度信息，修正由于不同因素（如海面粗糙度、大气层效应等）引起的波形畸变。</p>
+</li>
+<li>
+<p>波形重跟踪算法：将雷达理论回波模型与实测波形进行拟合来估计地球物理参数</p>
+</li>
+<li>
+<p>最小二乘法，通过对波形数据拟合模型来确定波形的特征位置（如前沿点、峰值位置等），从而提取海面高度信息。计算效率高，适合简单波形的处理。</p>
+</li>
+<li>
+<p>微波散射计：</p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th><strong>算法类型</strong></th>
+<th><strong>方法名称</strong></th>
+<th><strong>方法描述</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>风矢量反演算法</strong></td>
+<td>直接反演法</td>
+<td>基于散射计测量的回波强度和角度数据，直接推算风速和风向。精度较低，但计算简单。</td>
+</tr>
+<tr>
+<td></td>
+<td>逐步最小二乘法</td>
+<td>通过最小化预测值和实际散射计数据的误差来迭代求解风矢量，计算量大但精度较高。</td>
+</tr>
+<tr>
+<td></td>
+<td>非线性优化法</td>
+<td>使用非线性最优化算法反演风矢量，能够得到较高精度的风信息，适用于复杂情况。</td>
+</tr>
+<tr>
+<td><strong>模糊解去除方法</strong></td>
+<td>基于背景风场的去模糊方法</td>
+<td>利用已知的背景风场信息（如其他卫星或气象站的数据）来约束反演解，选择与背景风场最接近的解。</td>
+</tr>
+<tr>
+<td></td>
+<td>基于多源数据融合的去模糊方法</td>
+<td>结合不同平台或传感器的数据（如地面风速数据、其他卫星数据等），通过多源数据融合去除模糊解，选出最合理的风矢量解。</td>
+</tr>
+<tr>
+<td></td>
+<td>时序一致性法</td>
+<td>通过分析同一时段不同时间的风矢量解，利用风场的时空一致性去除模糊解，确保风场变化符合物理规律。</td>
+</tr>
+<tr>
+<td></td>
+<td>最大似然估计法</td>
+<td>通过比较不同解的概率分布，利用最大似然估计选择最有可能的风矢量解，通常结合多解生成与比较，选择具有最小误差的解。</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p>微波辐射计海洋参数反演算法：多元线性回归算法 （使用最小二乘法）；非线性迭代算法</p>
+</li>
+<li>
+<p>SAR（待补充）</p>
+</li>
+</ol>
+<hr>
+<h1 id="五-海洋遥感的定标与真实性检验">五、海洋遥感的定标与真实性检验</h1>
+<h2 id="51-海洋遥感的辐射定标">5.1 海洋遥感的辐射定标</h2>
+<ol>
+<li>
+<p><strong>辐射定标</strong>：海洋遥感产品预处理步骤之一，指的是建立遥感器数字量化输出值 S 与入射绝对辐射通量 F 间的定量关系</p>
+</li>
+<li>
+<p><strong>实验室定标</strong>：对星载遥感器在实验室模拟空间环境进行绝对辐射定标，将仪器的输出值转换为辐射值。有两种实现方法：① 标准灯+标准板系统；② 积分球系统</p>
+</li>
+<li>
+<p><strong>场地定标</strong>：在地球表面选取一些均匀区域作为定标场，通过同步测量实现在轨卫星传感器辐射校正的一种定标方法</p>
+</li>
+<li>
+<p><strong>替代定标</strong>：海洋信号较弱，进行场地定标后使用业务化的大气修正算法进行高准确度的离水辐射率，其结果会不准确，因此，在海上进行定标时，须将遥感器和算法一起考虑。替代定标即是在适当大气修正后，将海面离水辐射率和根据卫星导出的离水辐射率进行比较，出现误差后，调整遥感器的定标系数，使得反演值与现场实测值一致</p>
+</li>
+<li>
+<p><strong>星上定标</strong>：包括标准源定标和太阳月亮定标两种</p>
+</li>
+<li>
+<p><strong>微波辐射计辐射定标</strong>：发射前地面定标、在轨实时定标、发射后定标</p>
+</li>
+<li>
+<p><strong>微波高度计定标</strong>：地上定标场绝对定标（验潮站定标；海上石油平台定标；GPS 浮标定标）和高度计卫星间的星星交叉定标</p>
+</li>
+<li>
+<p><strong>微波散射计定标</strong>：</p>
+<ul>
+<li>内定标：对系统各部分独立分别定标；比例定标，对不同参数做测量</li>
+<li>外定标：点目标定标；均匀目标定标</li>
+</ul>
+</li>
+<li>
+<p><strong>SAR 定标</strong>：相对定标；绝对定标</p>
+</li>
+</ol>
+<h2 id="52-海洋遥感产品的真实性验证">5.2 海洋遥感产品的真实性验证</h2>
+<ol>
+<li>
+<p>真实性检验目的：通过建立遥感真实性检验观测系统，发展多尺度转换方法，实现定量遥感反演产品的真实性检验，提高遥感数据质量，最终服务于遥感应用研究</p>
+</li>
+<li>
+<p>真实性检验<strong>误差评价指标</strong>：</p>
+<p>相关系数：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>R</mi><mo>=</mo><mfrac><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover><mo>)</mo><mo>(</mo><msub><mi>Y</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>Y</mi><mo>ˉ</mo></mover><mo>)</mo></mrow><msqrt><mrow><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover><msup><mo>)</mo><mn>2</mn></msup><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>(</mo><msub><mi>Y</mi><mi>i</mi></msub><mo>−</mo><mover accent="true"><mi>Y</mi><mo>ˉ</mo></mover><msup><mo>)</mo><mn>2</mn></msup></mrow></msqrt></mfrac></mrow><annotation encoding="application/x-tex">R = \frac{\sum_{i=1}^{n} (X_i - \bar{X})(Y_i - \bar{Y})}{\sqrt{\sum_{i=1}^{n} (X_i - \bar{X})^2 \sum_{i=1}^{n} (Y_i - \bar{Y})^2}}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord mathdefault" style="margin-right:0.00773em;">R</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.938684em;vertical-align:-0.8296000000000001em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.109084em;"><span style="top:-2.4646274999999997em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord sqrt mtight"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.0362464285714286em;"><span class="svg-align" style="top:-3.428571428571429em;"><span class="pstrut" style="height:3.428571428571429em;"></span><span class="mord mtight" style="padding-left:1.19em;"><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7046857142857144em;"><span style="top:-2.1785614285714283em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.8971428571428572em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.32143857142857146em;"><span></span></span></span></span></span></span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.07847em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">X</span></span></span><span style="top:-2.9523300000000003em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mtight">ˉ</span></span></span></span></span></span></span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463142857142857em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span><span class="mspace mtight" style="margin-right:0.19516666666666668em;"></span><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7046857142857144em;"><span style="top:-2.1785614285714283em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.8971428571428572em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.32143857142857146em;"><span></span></span></span></span></span></span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.22222em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">Y</span></span></span><span style="top:-2.9523300000000003em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mtight">ˉ</span></span></span></span></span></span></span><span class="mclose mtight"><span class="mclose mtight">)</span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.7463142857142857em;"><span style="top:-2.786em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.0082464285714288em;"><span class="pstrut" style="height:3.428571428571429em;"></span><span class="hide-tail mtight" style="min-width:0.853em;height:1.5428571428571431em;"><svg width='400em' height='1.5428571428571431em' viewBox='0 0 400000 1080' preserveAspectRatio='xMinYMin slice'><path d='M95,702c-2.7,0,-7.17,-2.7,-13.5,-8c-5.8,-5.3,-9.5,
+-10,-9.5,-14c0,-2,0.3,-3.3,1,-4c1.3,-2.7,23.83,-20.7,67.5,-54c44.2,-33.3,65.8,
+-50.3,66.5,-51c1.3,-1.3,3,-2,5,-2c4.7,0,8.7,3.3,12,10s173,378,173,378c0.7,0,
+35.3,-71,104,-213c68.7,-142,137.5,-285,206.5,-429c69,-144,104.5,-217.7,106.5,
+-221c5.3,-9.3,12,-14,20,-14H400000v40H845.2724s-225.272,467,-225.272,467
+s-235,486,-235,486c-2.7,4.7,-9,7,-19,7c-6,0,-10,-1,-12,-3s-194,-422,-194,-422
+s-65,47,-65,47z M834 80H400000v40H845z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.42032500000000006em;"><span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.5350070000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mop mtight"><span class="mop op-symbol small-op mtight" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.7385428571428572em;"><span style="top:-2.1785614285714283em;margin-left:0em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-2.931em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.32143857142857146em;"><span></span></span></span></span></span></span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.07847em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">X</span></span></span><span style="top:-2.9523300000000003em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.16666em;"><span class="mtight">ˉ</span></span></span></span></span></span></span><span class="mclose mtight">)</span><span class="mopen mtight">(</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.22222em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord accent mtight"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-2.7em;"><span class="pstrut" style="height:2.7em;"></span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">Y</span></span></span><span style="top:-2.9523300000000003em;"><span class="pstrut" style="height:2.7em;"></span><span class="accent-body" style="left:-0.25em;"><span class="mtight">ˉ</span></span></span></span></span></span></span><span class="mclose mtight">)</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.8296000000000001em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span></span></span></span></p>
+<p>平均偏差：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>Bias</mtext><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mo>(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><msub><mi>Y</mi><mi>i</mi></msub><mo>)</mo></mrow><annotation encoding="application/x-tex">\text{Bias} = \frac{1}{n} \sum_{i=1}^{n} (X_i - Y_i)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">Bias</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span></span></span></span></p>
+<p>平均绝对误差：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>STD</mtext><mo>=</mo><msqrt><mrow><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><msup><mrow><mo fence="true">(</mo><mo>(</mo><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><msub><mi>Y</mi><mi>i</mi></msub><mo>)</mo><mo>−</mo><mtext>Bias</mtext><mo fence="true">)</mo></mrow><mn>2</mn></msup></mrow></msqrt></mrow><annotation encoding="application/x-tex">\text{STD} = \sqrt{\frac{1}{n} \sum_{i=1}^{n} \left( (X_i - Y_i) - \text{Bias} \right)^2}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">STD</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.84em;vertical-align:-0.5504959999999999em;"></span><span class="mord sqrt"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.2895040000000002em;"><span class="svg-align" style="top:-3.8em;"><span class="pstrut" style="height:3.8em;"></span><span class="mord" style="padding-left:1em;"><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="minner"><span class="mopen delimcenter" style="top:0em;">(</span><span class="mopen">(</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mclose">)</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mord text"><span class="mord">Bias</span></span><span class="mclose delimcenter" style="top:0em;">)</span></span><span class="msupsub"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.954008em;"><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight">2</span></span></span></span></span></span></span></span></span></span><span style="top:-3.249504em;"><span class="pstrut" style="height:3.8em;"></span><span class="hide-tail" style="min-width:1.02em;height:1.8800000000000001em;"><svg width='400em' height='1.8800000000000001em' viewBox='0 0 400000 1944' preserveAspectRatio='xMinYMin slice'><path d='M1001,80H400000v40H1013.1s-83.4,268,-264.1,840c-180.7,
+572,-277,876.3,-289,913c-4.7,4.7,-12.7,7,-24,7s-12,0,-12,0c-1.3,-3.3,-3.7,-11.7,
+-7,-25c-35.3,-125.3,-106.7,-373.3,-214,-744c-10,12,-21,25,-33,39s-32,39,-32,39
+c-6,-5.3,-15,-14,-27,-26s25,-30,25,-30c26.7,-32.7,52,-63,76,-91s52,-60,52,-60
+s208,722,208,722c56,-175.3,126.3,-397.3,211,-666c84.7,-268.7,153.8,-488.2,207.5,
+-658.5c53.7,-170.3,84.5,-266.8,92.5,-289.5c4,-6.7,10,-10,18,-10z
+M1001 80H400000v40H1013z'/></svg></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.5504959999999999em;"><span></span></span></span></span></span></span></span></span></p>
+<p>平均相对误差：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>MAE</mtext><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mi mathvariant="normal">∣</mi><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><msub><mi>Y</mi><mi>i</mi></msub><mi mathvariant="normal">∣</mi></mrow><annotation encoding="application/x-tex">\text{MAE} = \frac{1}{n} \sum_{i=1}^{n} |X_i - Y_i|</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">MAE</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.190108em;vertical-align:-0.345em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mord">∣</span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">−</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mord">∣</span></span></span></span></p>
+<p>均方根误差：<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mtext>MRE</mtext><mo>=</mo><mfrac><mn>1</mn><mi>n</mi></mfrac><msubsup><mo>∑</mo><mrow><mi>i</mi><mo>=</mo><mn>1</mn></mrow><mi>n</mi></msubsup><mrow><mo fence="true">∣</mo><mfrac><mrow><msub><mi>X</mi><mi>i</mi></msub><mo>−</mo><msub><mi>Y</mi><mi>i</mi></msub></mrow><msub><mi>Y</mi><mi>i</mi></msub></mfrac><mo fence="true">∣</mo></mrow><mo>×</mo><mn>100</mn><mi mathvariant="normal">%</mi></mrow><annotation encoding="application/x-tex">\text{MRE} = \frac{1}{n} \sum_{i=1}^{n} \left| \frac{X_i - Y_i}{Y_i} \right| \times 100\%</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.68333em;vertical-align:0em;"></span><span class="mord text"><span class="mord">MRE</span></span><span class="mspace" style="margin-right:0.2777777777777778em;"></span><span class="mrel">=</span><span class="mspace" style="margin-right:0.2777777777777778em;"></span></span><span class="base"><span class="strut" style="height:1.818em;vertical-align:-0.6500149999999999em;"></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.845108em;"><span style="top:-2.6550000000000002em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.394em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight">1</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.345em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="mop"><span class="mop op-symbol small-op" style="position:relative;top:-0.0000050000000000050004em;">∑</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.804292em;"><span style="top:-2.40029em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">i</span><span class="mrel mtight">=</span><span class="mord mtight">1</span></span></span></span><span style="top:-3.2029em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight">n</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.29971000000000003em;"><span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.16666666666666666em;"></span><span class="minner"><span class="mopen"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.167985em;"><span style="top:-1.955985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.561985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.167985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.6500149999999999em;"><span></span></span></span></span></span></span><span class="mord"><span class="mopen nulldelimiter"></span><span class="mfrac"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.8884309999999999em;"><span style="top:-2.655em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.22222em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span><span style="top:-3.23em;"><span class="pstrut" style="height:3em;"></span><span class="frac-line" style="border-bottom-width:0.04em;"></span></span><span style="top:-3.4101em;"><span class="pstrut" style="height:3em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.07847em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span><span class="mbin mtight">−</span><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.3280857142857143em;"><span style="top:-2.357em;margin-left:-0.22222em;margin-right:0.07142857142857144em;"><span class="pstrut" style="height:2.5em;"></span><span class="sizing reset-size3 size1 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.143em;"><span></span></span></span></span></span></span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.44509999999999994em;"><span></span></span></span></span></span><span class="mclose nulldelimiter"></span></span><span class="mclose"><span class="delimsizing mult"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:1.167985em;"><span style="top:-1.955985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-2.561985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span><span style="top:-3.167985em;"><span class="pstrut" style="height:2.606em;"></span><span class="delimsizinginner delim-size1"><span>∣</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.6500149999999999em;"><span></span></span></span></span></span></span></span><span class="mspace" style="margin-right:0.2222222222222222em;"></span><span class="mbin">×</span><span class="mspace" style="margin-right:0.2222222222222222em;"></span></span><span class="base"><span class="strut" style="height:0.80556em;vertical-align:-0.05556em;"></span><span class="mord">1</span><span class="mord">0</span><span class="mord">0</span><span class="mord">%</span></span></span></span></p>
+<p><span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">X_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 和<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>Y</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">Y_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 分别为反演结果和用于真实性检验的检验数据值；<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mover accent="true"><mi>X</mi><mo>ˉ</mo></mover></mrow><annotation encoding="application/x-tex">\bar{X}</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.8201099999999999em;vertical-align:0em;"></span><span class="mord accent"><span class="vlist-t"><span class="vlist-r"><span class="vlist" style="height:0.8201099999999999em;"><span style="top:-3em;"><span class="pstrut" style="height:3em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span></span></span><span style="top:-3.25233em;"><span class="pstrut" style="height:3em;"></span><span class="accent-body" style="left:-0.16666em;">ˉ</span></span></span></span></span></span></span></span></span> 和$bar{Y} $ 分别为 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>X</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">X_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.07847em;">X</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.07847em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span>  和 <span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>Y</mi><mi>i</mi></msub></mrow><annotation encoding="application/x-tex">Y_i</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.83333em;vertical-align:-0.15em;"></span><span class="mord"><span class="mord mathdefault" style="margin-right:0.22222em;">Y</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.31166399999999994em;"><span style="top:-2.5500000000000003em;margin-left:-0.22222em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mathdefault mtight">i</span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span></span></span></span> 的平均值；<span class="katex"><span class="katex-mathml"><math><semantics><mrow><mi>n</mi></mrow><annotation encoding="application/x-tex">n</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:0.43056em;vertical-align:0em;"></span><span class="mord mathdefault">n</span></span></span></span> 为检验数据样本大小。</p>
+</li>
+</ol>
+<h2 id="53-海洋遥感定标与检验的现场测量">5.3 海洋遥感定标与检验的现场测量</h2>
+<ol>
+<li>
+<p><strong>海洋遥感现场测量平台优缺点对比</strong></p>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th><strong>观测平台</strong></th>
+<th><strong>优点</strong></th>
+<th><strong>缺点</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>船舶观测平台</strong></td>
+<td>1. 可搭载多种传感器，数据种类丰富  <br> 2. 可实时人工干预，获取高质量数据  <br> 3. 适用于广域海洋调查，灵活性高</td>
+<td>1. 受天气、海况影响较大  <br> 2. 运行和维护成本高  <br> 3. 难以进行长期连续观测</td>
+</tr>
+<tr>
+<td><strong>光学浮标</strong></td>
+<td>1. 可进行高精度光学遥感数据校准  <br> 2. 适用于水色遥感、大气校正等研究  <br> 3. 可长期自动监测，数据时效性强</td>
+<td>1. 受海洋环境影响大，易被海洋生物附着  <br> 2. 部署和维护较困难  <br> 3. 空间覆盖有限，难以大范围观测</td>
+</tr>
+<tr>
+<td><strong>海上固定观测平台</strong></td>
+<td>1. 可进行长期、连续的高时间分辨率监测  <br> 2. 可搭载多种传感器，获取多参数数据  <br> 3. 适用于特定海域的长期环境监测</td>
+<td>1. 空间覆盖有限，难以移动  <br> 2. 设备受恶劣天气影响，可能损坏  <br> 3. 维护成本较高</td>
+</tr>
+<tr>
+<td><strong>水下滑翔机</strong></td>
+<td>1. 机动性强，可获取剖面数据  <br> 2. 能耗低，可长期自主运行  <br> 3. 适用于深海、大范围观测</td>
+<td>1. 运行速度较慢，难以快速响应突发事件  <br> 2. 观测受洋流影响，难以精确控制轨迹  <br> 3. 受限于传感器种类，部分参数难以测量</td>
+</tr>
+<tr>
+<td><strong>Argo浮标</strong></td>
+<td>1. 全球分布广，可获取大尺度海洋数据  <br> 2. 适用于长期温盐剖面监测  <br> 3. 低维护成本，可自主上浮/下潜</td>
+<td>1. 无法进行实时数据传输（受制于卫星通讯周期）  <br> 2. 受洋流漂移影响，轨迹难以控制  <br> 3. 仅适用于温度、盐度等基本参数，传感器配置有限</td>
+</tr>
+</tbody>
+</table>
+</li>
+<li>
+<p><strong>表观光学特性测量</strong>：剖面法（一类水体）；表面法（二类水体）</p>
+</li>
+<li>
+<p>固有光学特性测量：主要测量参数有水体总吸收与总衰减系数、叶绿素浓度(Chl-a)、水体总悬浮物浓度/无机悬浮物浓度(TSM/ISM)、黄色物质吸收系数(<span class="katex"><span class="katex-mathml"><math><semantics><mrow><msub><mi>c</mi><mrow><mi>C</mi><mi>D</mi><mi>O</mi><mi>M</mi></mrow></msub><mo>(</mo><mi>λ</mi><mo>)</mo></mrow><annotation encoding="application/x-tex">c_{CDOM}(\lambda)</annotation></semantics></math></span><span class="katex-html" aria-hidden="true"><span class="base"><span class="strut" style="height:1em;vertical-align:-0.25em;"></span><span class="mord"><span class="mord mathdefault">c</span><span class="msupsub"><span class="vlist-t vlist-t2"><span class="vlist-r"><span class="vlist" style="height:0.32833099999999993em;"><span style="top:-2.5500000000000003em;margin-left:0em;margin-right:0.05em;"><span class="pstrut" style="height:2.7em;"></span><span class="sizing reset-size6 size3 mtight"><span class="mord mtight"><span class="mord mathdefault mtight" style="margin-right:0.07153em;">C</span><span class="mord mathdefault mtight" style="margin-right:0.02778em;">D</span><span class="mord mathdefault mtight" style="margin-right:0.02778em;">O</span><span class="mord mathdefault mtight" style="margin-right:0.10903em;">M</span></span></span></span></span><span class="vlist-s">​</span></span><span class="vlist-r"><span class="vlist" style="height:0.15em;"><span></span></span></span></span></span></span><span class="mopen">(</span><span class="mord mathdefault">λ</span><span class="mclose">)</span></span></span></span>)、水体后向散射系数等</p>
+</li>
+</ol>
+<hr>
+<h1 id="六-海洋遥感的应用">六、海洋遥感的应用</h1>
+<style>
+  table {
+    font-size: 12px; /* 设置表格内文字大小为 2 号字体 */
+  }
+</style>
+<table>
+<thead>
+<tr>
+<th><strong>应用领域</strong></th>
+<th><strong>主要内容</strong></th>
+<th><strong>典型传感器/数据源</strong></th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td><strong>海表温度监测</strong></td>
+<td>监测全球及区域海洋表面温度变化，研究气候变化、海洋环流等</td>
+<td>MODIS、AVHRR、Sentinel-3 SLSTR</td>
+</tr>
+<tr>
+<td><strong>海洋水色遥感</strong></td>
+<td>监测叶绿素浓度、悬浮物和溶解有机物，评估海洋生态环境</td>
+<td>SeaWiFS、MODIS-Aqua、Sentinel-3 OLCI</td>
+</tr>
+<tr>
+<td><strong>海洋动力过程</strong></td>
+<td>研究海洋流场、潮汐和涌浪等动力过程</td>
+<td>Altimeter（Topex/Poseidon、Jason）、Sentinel-6</td>
+</tr>
+<tr>
+<td><strong>海岸带监测</strong></td>
+<td>监测海岸侵蚀、土地利用变化、湿地生态等</td>
+<td>Landsat、Sentinel-2、SPOT</td>
+</tr>
+<tr>
+<td><strong>海冰监测</strong></td>
+<td>监测极地海冰范围、厚度、漂移，研究全球气候变化</td>
+<td>SAR（Sentinel-1、RADARSAT）、MODIS</td>
+</tr>
+<tr>
+<td><strong>赤潮与溢油监测</strong></td>
+<td>监测海洋赤潮、溢油污染等异常事件</td>
+<td>MODIS、Sentinel-3 OLCI、SAR（Sentinel-1）</td>
+</tr>
+<tr>
+<td><strong>海洋灾害预警</strong></td>
+<td>监测风暴潮、海啸等灾害，提供预警信息</td>
+<td>Altimeter、SAR、GNSS-Reflectometry</td>
+</tr>
+<tr>
+<td><strong>渔业资源评估</strong></td>
+<td>结合海表温度、叶绿素等数据评估渔场资源</td>
+<td>MODIS、VIIRS、Sentinel-3</td>
+</tr>
+</tbody>
+</table>
+<blockquote>
+<p>[!NOTE]</p>
+<p>如果您需要完整文档或数据，欢迎通过<strong>邮箱联系</strong> 📩 或直接在<strong>评论区留言</strong> 💬（评论可能看不到😇，还请见谅～）</p>
+<p>若发现任何<strong>错误</strong>或<strong>不准确之处</strong>，请务必告诉我哦！⚠️ 我会第一时间修正更新～</p>
+<p>当然，如果您有<strong>补充内容</strong>、<strong>改进建议</strong>，或者<strong>想讨论的技术点</strong>，也欢迎畅所欲言！🤝 我们一起完善这份知识库吧！</p>
+<p>期待与你共同探索海洋遥感的世界！🌊✨</p>
+</blockquote>
+<p>本文采用 <a href="https://creativecommons.org/licenses/by-nc/4.0/">CC BY-NC 4.0</a> 许可协议。</p>
+<p>© 2025 tonggggggh。本文为原创，未经许可不得转载。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[艾米莉•迪金森诗选]]></title>
+        <id>https://tonggggggh.github.io/post/ai-mi-li-di-jin-sen-shi-xuan/</id>
+        <link href="https://tonggggggh.github.io/post/ai-mi-li-di-jin-sen-shi-xuan/">
+        </link>
+        <updated>2023-04-26T08:32:56.000Z</updated>
+        <content type="html"><![CDATA[<p>如果我能使一颗心免于破碎，</p>
+<p>我将没有虚度此生；</p>
+<p>如果我能抚慰一个痛苦的生命，</p>
+<p>或是使一个创口不再灼热，</p>
+<p>或是帮助一只昏迷的知更鸟</p>
+<p>找到它的巢居，</p>
+<p>我将没有虚度此生</p>
+<hr>
+<p>我将力量握在手里</p>
+<p>正面朝世界走去；</p>
+<p>虽然不能于大卫的力量相比，</p>
+<p>可我有双倍的勇气。</p>
+<p>我举起小小的石子，</p>
+<p>自己却被集中，摔倒。</p>
+<p>难道是因为高力士太高大，</p>
+<p>而我，太弱小？</p>
+<hr>
+<p>假如我没有见过太阳</p>
+<p>也许我会忍受黑暗；</p>
+<p>可如今，太阳把我的寂寞</p>
+<p>照耀的更加荒凉。</p>
+<hr>
+<p>爱情先于生命，</p>
+<p>后于死亡，</p>
+<p>是创造的开始，</p>
+<p>呼吸的宣讲。</p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[inner emptiness]]></title>
+        <id>https://tonggggggh.github.io/post/inner-emptiness/</id>
+        <link href="https://tonggggggh.github.io/post/inner-emptiness/">
+        </link>
+        <updated>2023-04-19T05:43:45.000Z</updated>
+        <content type="html"><![CDATA[<p><em>The void within, aching to be filled,</em></p>
+<p><em>Seeking outward for what can’t be found.</em></p>
+<p><em>The restless search, the grasping hands,</em></p>
+<p><em>All to soothe a solitude profound.</em></p>
+<p><u>claude</u></p>
+<hr>
+<p><em>The void within, aching to be filled,</em></p>
+<p><em>Seeking outward for what can’t be found.</em></p>
+<p><em>The restless search, the grasping hands,</em></p>
+<p><em>All to soothe a solitude profound.</em></p>
+<p><u>New Bing</u></p>
+<hr>
+<p><em>Within me lies a void so deep,</em></p>
+<p><em>A chasm where my soul should sleep,</em></p>
+<p><em>An emptiness that echoes loud,</em></p>
+<p><em>A weight that drags me to the ground,</em></p>
+<p><em>And yet I search, but never found.</em></p>
+<p><u>GPT-3.5</u></p>
+]]></content>
+    </entry>
+    <entry>
+        <title type="html"><![CDATA[第一天]]></title>
+        <id>https://tonggggggh.github.io/post/di-yi-tian/</id>
+        <link href="https://tonggggggh.github.io/post/di-yi-tian/">
+        </link>
+        <updated>2023-04-16T04:24:35.000Z</updated>
+        <content type="html"><![CDATA[<p>还不错，网页加载有问题</p>
+]]></content>
+    </entry>
+</feed>
